@@ -1,7 +1,7 @@
-name,age,state
-john,23,iowa
-mary,78,dc
-peter,22,california
-jeff,19,texas
-bill,45,washington
-lisa,33,dc
+name,age,state,num_children,num_pets
+john,23,iowa,2,0
+mary,78,dc,2,4
+peter,22,california,0,0
+jeff,19,texas,1,5
+bill,45,washington,2,0
+lisa,33,dc,1,0
