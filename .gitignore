@@ -55,6 +55,7 @@ docs/_build/
 
 # PyBuilder
 target/
+# my stuff
 venv3
 venv2
 venv
@@ -62,3 +63,4 @@ text8
 questions-words.txt
 venvtest
 text8.zip
+itau-ds.ipynb
