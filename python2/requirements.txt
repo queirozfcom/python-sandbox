@@ -1,6 +1,5 @@
 adium-theme-ubuntu==0.3.4
 appdirs==1.4.3
-apt-xapian-index==0.45
 arandr==0.1.7.1
 awscli==1.10.23
 backports-abc==0.4
