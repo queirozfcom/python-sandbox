@@ -1,8 +1,12 @@
-The Travelling Salesman problem (TSP) is a well-known problem in computer science. Roughly speaking, it refers to a salesperson who must deliver packages in cities that are modelled through a weighted graph, and the objective is to find the optimal route such that the total distance travelled is minimized.
+The Travelling Salesman problem (TSP) is a well-known problem in computer science. Roughly speaking, it refers to a salesperson 
+who must deliver packages in cities that are modelled through a weighted graph, and the objective is to find the optimal route
+such that the total distance travelled is minimized.
 
-This problem is known for its complexity and for the fact that it is a NP-hard problem, which means that there is no polynomial-time solution (assuming P != NP).
+This problem is known for its complexity and for the fact that it is a NP-hard problem, which means that there is no 
+polynomial-time solution (assuming P != NP).
 
-The problem we must solve is, in fact, a specific variant of the TSP, called Vehicle Routing Problem (VRP) which is different from the TSP inasmuch as there are now multiple salespeople (couriers). We will, in addition, add following constraints:
+The problem we must solve is, in fact, a specific variant of the TSP, called Vehicle Routing Problem (VRP) which is different 
+from the TSP inasmuch as there are now multiple salespeople (couriers). We will, in addition, add following constraints:
 
 - Each courier has a limited space he/she can carry
 
@@ -16,13 +20,15 @@ I can assume I'm given:
 
 - The capacity each courier can carry at any one time (in litres) and the volume of each package.
 
-Supposing we have to develop a quick solution just to start off with, **without looking at how other people have solved this**, here's what I would propose:
+Supposing we have to develop a quick solution just to start off with, **without looking at how other people have solved this**,
+ here's what I would propose:
 
-> These are not optimal solutions. They're just initial solutions that gets the job done quickly.
+> These are not optimal solutions. They're just initial solutions to get the job done quickly.
 
 Our problem can be approached like this:
 
-> Given a steady stream of new packages, how to I assign couriers to a) pick up the packages and b) deliver those packages, so as to minimize the total amount of time/distance travelled by the couriers.
+> Given a steady stream of new orders, how to I assign couriers to a) pick up the packages and b) deliver those packages, so as
+ to minimize the total amount of time/distance travelled by the couriers.
 
 
 #######################################################
@@ -32,22 +38,32 @@ Our problem can be approached like this:
 
 ### Assumptions
 
-- I would split the city into a number of non-overlapping **sectors** and suppose I have some number of couriers either active or waiting in each of those sectors. 
+- I would split the city into a number of non-overlapping **sectors** and suppose I have some number of couriers either active
+ or waiting in each of those sectors. 
 
-    - Let's assume that orders within those sectors are considered to be "nearby" so that, on average, adding a pickup/deliver order to a courier that's active inside that sector is considered to be acceptable
+    - Let's assume that orders within those sectors are considered to be "nearby" so that, on average, adding a pickup/deliver
+     order to a courier that's active inside that sector is considered to be acceptable
  
-    - This also reduces the penalty that a courier incurs if he/she must pickup/deliver orders sequentially, rather than concurrently (only valid for orders that are completely within that sector)
+    - This also reduces the penalty that a courier incurs if he/she must pickup/deliver orders sequentially, rather than 
+    concurrently (only valid for orders that are completely within that sector)
 
-- Let's assume that each courier has a *delivery list*, which are the next orders he/she will fulfill and, when we `push` an order to a courier, it means that we will add that order to the end of his/her delivery list.
+    - This is also useful because it's faster to calculate which couriers are in a given sector at a given time (this
+    could be indexed) rather than getting everyone's distance from a point and ranking them from nearest to farthest apart.
+
+- Let's assume that each courier has a *delivery list*, which are the next orders he/she will fulfill and, when we `push` an
+ order to a courier, it means that we will add that order to the end of his/her delivery list.
 
     - COURIER c : [ order o1 | order 02 | order o3 ...  ]
                   -----------------------------------> time
 
- - We can also `insert` an order into an arbitrary place in his/her list (e.g. for time-constrained orders that must be picked-up/delivered at a given time)
+ - We can also `insert` an order into an arbitrary place in his/her list (e.g. for time-constrained orders that must be picked-up
+ /delivered at a given time)
 
-- All other things being equal, we would rather assign a new order to an active courier, so as to avoid him/her becoming *inactive*.
+- All other things being equal, we would rather assign a new order to an active courier, so as to avoid him/her becoming 
+*inactive*.
 
-- We need to keep a pool of waiting couriers (for orders no active courier can take) but it must be as small as possible, because it costs money to keep them waiting and, while they are waiting, they don't generate any money for us.
+- We need to keep a pool of waiting couriers (for orders no active courier can take) but it must be as small as possible, 
+because it costs money to keep them waiting and, while they are waiting, they don't generate any money for us.
 
     - in other words, we also want to be able to deliver all orders using the smallest possible amount of couriers, if possible 
 
@@ -60,41 +76,56 @@ function: get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(x)
 function: get_adjacent_sectors(x)
   return sectors which are adjacent to x
 
-
-
 for each new order o:
 
-   for each sector s: 
+   s <- o.pickup.sector
 
-       if o is completely within sector s:
+   if o is completely within sector s:
 
-          if o is NOT time-constrained:
+      if o is NOT time-constrained:
 
-                couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)
-                                
-                if couriers is not empty:
-                    c <- couriers.get_first()
+            couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)
+                            
+            if couriers is not empty:
+                c <- couriers.get_first()
+                push o to c
+            
+            else: // no active couriers available in sector s
+            
+                ss  <- get_adjacent_sectors(s)
+                couriers_in_adjacent_sectors <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss)
+                
+                if couriers_in_adjacent_sectors is not empty:
+                    c <- couriers_in_adjacent_sectors.get_first()
                     push o to c
                 
-                else: // no active couriers available in sector s
-                
-                    ss  <- get_adjacent_sectors(s)
-                    couriers_in_adjacent_sectors <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss)
-                    
-                    if couriers_in_adjacent_sectors is not empty:
-                        c <- couriers_in_adjacent_sectors.get_first()
-                        push o to c
-                    
-                    else // no available active couriers even in adjacent sectors       
-                        c <- get_first_waiting_courier()
-                        push o to c
+                else // no available active couriers even in adjacent sectors       
+                    c <- get_first_waiting_courier()
+                    push o to c
 
-            else: // o IS time-constrained
-                    
-                candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)        
-                         
+        else: // o IS time-constrained
+                
+            candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)        
+                     
+            if candidate_couriers is not empty         
+                     
+                for each active courier c in candidate_couriers:
+
+                    if all orders after o's pickup time are NOT time-constrained 
+                    AND the state of c's trunk supports the addition of a package as large as o:
+                            
+                        insert o in c's delivery list, after the first order that
+                        can be picked/up delivered before o's pickup time, given the time estimates
+                        and shift all other orders after that
+
+            else: // no candidate couriers in base sector s
+
+                ss <- get_adjacent_sectors(s)
+                candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss) 
+                
+
                 if candidate_couriers is not empty         
-                         
+                     
                     for each active courier c in candidate_couriers:
 
                         if all orders after o's pickup time are NOT time-constrained 
@@ -104,87 +135,70 @@ for each new order o:
                             can be picked/up delivered before o's pickup time, given the time estimates
                             and shift all other orders after that
 
-                else: // no candidate couriers in base sector s
+                else // no active couriers could be found, even in adjacent sectors
+                    c <- get_first_waiting_courier()
+                    push o to c
 
-                    ss <- get_adjacent_sectors(s)
-                    candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss) 
-                    
+    else: // this order spans multiple sectors
 
-                    if candidate_couriers is not empty         
-                         
-                        for each active courier c in candidate_couriers:
-
-                            if all orders after o's pickup time are NOT time-constrained 
-                            AND the state of c's trunk supports the addition of a package as large as o:
-                                    
-                                insert o in c's delivery list, after the first order that
-                                can be picked/up delivered before o's pickup time, given the time estimates
-                                and shift all other orders after that
-
-                    else // no active couriers could be found, even in adjacent sectors
-                        c <- get_first_waiting_courier()
-                        push o to c
-
-   else: // this order spans multiple sectors
-
-          a <- o.pickup.get_sector() 
+        a <- o.pickup.sector 
+      
+        if o is NOT time-constrained
+            couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)
           
-          if O is NOT time-constrained
-              couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)
-              
-              if couriers is not empty:
-                    c <- couriers.get_first()
-                    push o to c
-              
-              else: // no active couriers available in sector s
-                    ss  <- get_adjacent_sectors(s)
-                    couriers_in_adjacent_sectors <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss)
-   
-                    if couriers_in_adjacent_sectors is not empty:
-                        c <- couriers_in_adjacent_sectors.get_first()
-                        push o to c 
-                                              
-                    else // no available active couriers even in adjacent sectors       
-                        c <- get_first_waiting_courier()
-                        push o to c
-                        
+            if couriers is not empty:
+                c <- couriers.get_first()
+                push o to c
+          
+            else: // no active couriers available in sector s
+                ss  <- get_adjacent_sectors(s)
+                couriers_in_adjacent_sectors <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss)
 
-          else: // order IS time-constrained
-                         
-                candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)        
-                         
+                if couriers_in_adjacent_sectors is not empty:
+                    c <- couriers_in_adjacent_sectors.get_first()
+                    push o to c 
+                                          
+                else // no available active couriers even in adjacent sectors       
+                    c <- get_first_waiting_courier()
+                    push o to c
+                    
+
+        else: // order IS time-constrained
+                     
+            candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)        
+                     
+            if candidate_couriers is not empty         
+                     
+                for each active courier c in candidate_couriers:
+
+                    if all orders after o's pickup time are NOT time-constrained 
+                    AND the state of c's trunk supports the addition of a package as large as o:
+                            
+                        insert o in c's delivery list, after the first order that
+                        can be picked/up delivered before o's pickup time, given the time estimates
+                        and shift all other orders after that
+
+            else: // no candidate couriers in base sector s
+
+                ss <- get_adjacent_sectors(s)
+                candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss) 
+                
+
                 if candidate_couriers is not empty         
-                         
+                     
                     for each active courier c in candidate_couriers:
 
                         if all orders after o's pickup time are NOT time-constrained 
                         AND the state of c's trunk supports the addition of a package as large as o:
-                                
+
                             insert o in c's delivery list, after the first order that
                             can be picked/up delivered before o's pickup time, given the time estimates
                             and shift all other orders after that
 
-                else: // no candidate couriers in base sector s
-
-                    ss <- get_adjacent_sectors(s)
-                    candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss) 
-                    
-
-                    if candidate_couriers is not empty         
-                         
-                        for each active courier c in candidate_couriers:
-
-                            if all orders after o's pickup time are NOT time-constrained 
-                            AND the state of c's trunk supports the addition of a package as large as o:
-
-                                insert o in c's delivery list, after the first order that
-                                can be picked/up delivered before o's pickup time, given the time estimates
-                                and shift all other orders after that
-
-                    else // no active couriers could be found, even in adjacent sectors
-                        c <- get_first_waiting_courier()
-                        push o to c
-              
+                else // no active couriers could be found, even in adjacent sectors
+                    c <- get_first_waiting_courier()
+                    push o to c
+          
 
 
 ### Notes
@@ -197,24 +211,24 @@ for each new order o:
 
  - increase the size of the areas which will probably cause larger delivery queues for each courier
  
- - decrease the size of the areas (smaller areas will reduce the coverage area for each courier but may increase the number of order that span multiple areas)
+ - decrease the size of the areas (smaller areas will reduce the coverage area for each courier but may increase the number of 
+ order that span multiple areas)
  
  - add couriers
  
 ### Complexity
 
-N = number of couriers
-S = number of sectors
+The most costly (time) operation seems to be get_couriers_who_at_the_end_of_their_lists_will_be_in_sector, which needs to 
+a) fetch couriers and b) rank them according to their order list size.
 
-- the space complexity is as follows:
+Fetching can be easy if we can keep an index (e.g. a hash table) with composite keys (sector name, time) 
+and the values are the couriers who will be in that sector before that time.
 
- - a list of orders for each active courier - O(N)
- 
- - a list of couriers - O(N)
+    - The space taken by this index is around O(N * average_order_list_size), where average_list_size is the average size of
+    a courier's order list (containing the orders he/she needs to complete) 
 
-- time complexity:
-
- - worst case:
+Ordering an array is generally O(n log(n)) which looks OK because we only need to do that for couriers who will be in a spe-
+cific sector.
 
 ### Things that can go wrong
 
@@ -222,11 +236,16 @@ S = number of sectors
 
  - we could just re-add those order into the stream, as if they were new orders
 
-- If we compare this algorithm to a processor that has to process tasks, each courier would be a processor with a **single-core and no multiprocessing capabilities**, i.e. it can't have two orders concurrently.
+- If we compare this algorithm to a processor that has to process tasks, each courier would be a processor with a **single-core
+ and no multiprocessing capabilities**, i.e. it can't have two orders concurrently.
 
- - This means that each courier can't *interleave* orders (as a processor switches between processes that are doing slow tasks such as reading from disk) a courier will sit idle for a long time if we have a time-constrained order where the delivery time is hours or days after the pickup time.
+ - This means that each courier can't *interleave* orders (as a processor switches between processes that are doing slow tasks 
+ such as reading from disk) a courier will sit idle for a long time if we have a time-constrained order where the delivery time
+  is hours or days after the pickup time.
  
- - One solution for this is, naturally, to allow each courier (core) to process multiple orders (processes) at the same time, keeping the packages (process context) in memory. We could use the same scheduling mechanisms a processor uses, and watch out for things like starvation.
+ - One solution for this is, naturally, to allow each courier (core) to process multiple orders (processes) at the same time, 
+ keeping the packages (process context) in memory. We could use the same scheduling mechanisms a processor uses, and watch out 
+ for things like starvation.
 
 ### Other thoughts
 
@@ -234,7 +253,8 @@ S = number of sectors
 
 - or we could choose better areas, after we collect some data on which areas have more orders
 
-- maybe we should calculate the best courier for a given order based upon where that courier will be after the delivery of the last order in his/her queue
+- maybe we should calculate the best courier for a given order based upon where that courier will be after the delivery of the
+ last order in his/her queue
 
 - Consider cases when it's best for the courier not to pickup/deliver orders sequentially
 
@@ -245,168 +265,117 @@ S = number of sectors
 ## Version 2 (Non Blocking; concurrent order processing)
 #######################################################
 
-The basic problem with the solution above is that orders can only be completed sequentially, and this is very wasteful in case, for instance, the courier has two long-distance orders and the two pickups are close to one another and the two deliveries are also close to one another.
+The basic problem with the solution above is that orders can only be completed sequentially, and this is very wasteful in case,
+ for instance, the courier has two long-distance orders and the two pickups are close to one another and the two deliveries are 
+ also close to one another.
 
-Under the previous algorithm, the courier would pickup the first order, deliver that order and then come back to pickup the other order, which is very wasteful because it would be much more efficient to pickup both orders and then deliver both orders together.
+Under the previous algorithm, the courier would pickup the first order, deliver that order and then come back to pickup the 
+other order, which is very wasteful because it would be much more efficient to pickup both orders and then deliver both orders 
+together.
 
 An easy way to think of this is as each courier being a CPU that can "switch" between multiple processes (orders).
 
-This forces us to consider the remaining space each courier has in his/her trunk, because this can only be done until there's enough space in the trunk.
+This forces us to consider the remaining space each courier has in his/her trunk, because this can only be done until there's
+ enough space in the trunk.
 
 So we can create a better version of the algorithm, addressing that.
 
-We will also change the way we represent the orders for each courier. Each order has now two separate parts (pickup and delivery), which can be added to a courier's delivery list separately.
+We will also change the way we represent the orders for each courier. Each order has now two separate parts (pickup and 
+delivery), which can be added to a courier's delivery list separately.
 
     - COURIER c : [ order o1 pickup | order 02 pickup | order o1 deliver | order o3 pickup | order 02 deliver | ...  ]
                   -----------------------------------> time  
 
-### The algorithm
+## The approach
 
+Instead of writing pseudo code as above, I'll explain the rationale for this approach with text.
 
-The case when the order is not time constrained and it is fully contained within a single sector is still the easiest, because we can just push that order to any courier who, at the end of his/her list, will be in that sector. This order can be completed sequentially (pickup and delivery one after the other.)
+IMPORTANT: things like listing, sorting and ranking can all be optimized with some sort of inverse index (with sectors
+as keys), so that lookups are fast. I didn't include that step here so as not to confuse the logic of the algorithm.
 
+Let o be the order and c be the current courier.
 
+Let's split the problem in 3 cases:
 
+    -(I had initially split into 4 cases but the case where the order is time constrained and fully contained within 
+    a single sector is not very different to the case where it is time constrained but spans multiple areas, because 
+    I can't take advantage of the fact that the pickup and delivery are in the same place if they have to be, like, 
+    6 hours apart.)
 
-for each new order o:
+### Case 1) Not time constrained, fully-contained within a single sector
 
-   for each sector s: 
+This is still the easiest, because we can just push that order to any courier who, at the end of his/her list, will be 
+in that sector. This order can be completed sequentially (pickup and delivery one after the other.)
 
-       if o is completely within sector s:
+### Case 2) Not time constrained, spans multiple sectors
 
-          if o is NOT time-constrained:
+This is a little bit more complicated. 
 
-                couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)
-                                
-                if couriers is not empty:
-                    c <- couriers.get_first()
-                    push o to c
-                
-                else: // no active couriers available in sector s
-                
-                    ss  <- get_adjacent_sectors(s)
-                    couriers_in_adjacent_sectors <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss)
-                    
-                    if couriers_in_adjacent_sectors is not empty:
-                        c <- couriers_in_adjacent_sectors.get_first()
-                        push o to c
-                    
-                    else // no available active couriers even in adjacent sectors       
-                        c <- get_first_waiting_courier()
-                        push o to c
+- We can rank all couriers by their proximity to sector o.pickup.sector (ranking first those couriers who will be in that 
+sector soon (according to their current order list)) 
 
-            else: // o IS time-constrained
-                    
-                candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)        
-                         
-                if candidate_couriers is not empty         
-                         
-                    for each active courier c in candidate_couriers:
+- Then we filter out the couriers who, by the time they are in that sector, will not have enough space for o.package.
 
-                        if all orders after o's pickup time are NOT time-constrained 
-                        AND the state of c's trunk supports the addition of a package as large as o:
-                                
-                            insert o in c's delivery list, after the first order that
-                            can be picked/up delivered before o's pickup time, given the time estimates
-                            and shift all other orders after that
+- Of these couriers, we try to select someone who will already be going to o.delivery.sector in their current
+order list. If we find anyone, we assign the order to him. If we don't, we assign it to any courier we filtered.
 
-                else: // no candidate couriers in base sector s
+### Case 3) Time constrained (both spanning multiple areas and otherwise)
 
-                    ss <- get_adjacent_sectors(s)
-                    candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss) 
-                    
+- We can rank all couriers by their proximity to sector o.pickup.sector (ranking first those couriers who will be 
+in that area right before o.pickup.time)
 
-                    if candidate_couriers is not empty         
-                         
-                        for each active courier c in candidate_couriers:
+- Then we filter out the couriers who, by the time they are in that sector, will not have enough space for o.package.
 
-                            if all orders after o's pickup time are NOT time-constrained 
-                            AND the state of c's trunk supports the addition of a package as large as o:
-                                    
-                                insert o in c's delivery list, after the first order that
-                                can be picked/up delivered before o's pickup time, given the time estimates
-                                and shift all other orders after that
+- If the pickup/delivery times for the package are close we can just insert the pickup/delivery (sequentially) into the 
+best ranked courier's order list.
 
-                    else // no active couriers could be found, even in adjacent sectors
-                        c <- get_first_waiting_courier()
-                        push o to c
+- If the pickup/delivery times are very far apart, we insert the pickup into the best ranked courier's list (at the latest
+possible time that still enables him to pickup the package in the needed time) and we insert the delivery in the latest pos-
+sible position, that still allows him/her to deliver the package on time.
 
-   else: // this order spans multiple sectors
+-----------------------------------------------------------------
 
-          a <- o.pickup.get_sector() 
-          
-          if O is NOT time-constrained
-              couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)
-              
-              if couriers is not empty:
-                    c <- couriers.get_first()
-                    push o to c
-              
-              else: // no active couriers available in sector s
-                    ss  <- get_adjacent_sectors(s)
-                    couriers_in_adjacent_sectors <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss)
-   
-                    if couriers_in_adjacent_sectors is not empty:
-                        c <- couriers_in_adjacent_sectors.get_first()
-                        push o to c 
-                                              
-                    else // no available active couriers even in adjacent sectors       
-                        c <- get_first_waiting_courier()
-                        push o to c
-                        
+### Things that can go wrong.
 
-          else: // order IS time-constrained
-                         
-                candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(s)        
-                         
-                if candidate_couriers is not empty         
-                         
-                    for each active courier c in candidate_couriers:
+In case 2 and 3: we may fail to find any couriers who will be in o.pickup.sector, or only find couriers who have their trunks
+full.
 
-                        if all orders after o's pickup time are NOT time-constrained 
-                        AND the state of c's trunk supports the addition of a package as large as o:
-                                
-                            insert o in c's delivery list, after the first order that
-                            can be picked/up delivered before o's pickup time, given the time estimates
-                            and shift all other orders after that
+    - in that case, we can expand the search area to adjacent sectors, and keep going until we find someone.
 
-                else: // no candidate couriers in base sector s
+### Complexity
 
-                    ss <- get_adjacent_sectors(s)
-                    candidate_couriers <- get_couriers_who_at_the_end_of_their_lists_will_be_in_sector(ss) 
-                    
+Similarly to the previous analysis, the most costly operation is probably that of ranking couriers (who will be near/at 
+some point in the future) by the proximity to that point in time. 
 
-                    if candidate_couriers is not empty         
-                         
-                        for each active courier c in candidate_couriers:
+We can tradeoff time complexity for a little bit more space in indices to make these operations fast.
 
-                            if all orders after o's pickup time are NOT time-constrained 
-                            AND the state of c's trunk supports the addition of a package as large as o:
+### Optimizations
 
-                                insert o in c's delivery list, after the first order that
-                                can be picked/up delivered before o's pickup time, given the time estimates
-                                and shift all other orders after that
+This is a greedy approach - we select the best courier with respect to the pickup location/time but we may select a courier
+who is good for the pickup but very bad for the delivery (he will be in the other side of the city by the time he should
+deliver the package).
 
-                    else // no active couriers could be found, even in adjacent sectors
-                        c <- get_first_waiting_courier()
-                        push o to c
-              
-
-
-
+    - Perhaps we could also look at where he/she will be at delivery time, because it may be better to select a courier
+    who is a moderate distance away from the pickup but also not very far from the delivery point (at delivery time).
 
 ------------------------------------------------------
 
 ### Other considerations
 
-Maybe we are approaching this from the wrong perspective. Maybe it would be just better to broadcast every order to all couriers and have them say who wants to execute each order. 
+Maybe we can look at the problem from a different perspective too. Maybe it would be just better to broadcast every order 
+to all couriers and have them say who wants to execute each order. 
 
-This way we delegate all processing to them and we don't have to calculate the routes and lists ourselves. They can each look at what they have to do that day and, when each order arrives, they can say whether they want to do that or not. We can keep them "honest" by thinking of incentives for them not to "bite more than they can chew" doing things like:
+This way we delegate all processing to them and we don't have to calculate the routes and lists ourselves. They can each look at
+ what they have to do that day and, when each order arrives, they can say whether they want to do that or not.
 
-    - punish/ couriers who accept orders and then don't do them.
+ We can keep them think of incentives for them not to "bite more than they can chew" doing things like:
 
-    - keep a    
+    - punish/ couriers who accept orders and then don't complete them.
 
-    - publishing the orders first to people who are currently in the vicinity of the pickup sector. If nobody there accepts, then we grows the search radius incrementally.
+    - publishing the orders first to people who act according to the rules
 
-        - in particular for time-constrained orders, we could only publish the order to couriers who we know can reach the pickup area by the time it needs to be picked up.
+    - publishing the orders first to people who are currently in the vicinity of the pickup sector. If nobody there accepts, 
+    then we grow the search radius incrementally.
+
+        - in particular for time-constrained orders, we could only publish the order to couriers who we know can reach the 
+        pickup area by the time it needs to be picked up.
