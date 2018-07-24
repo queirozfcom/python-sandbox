@@ -1,0 +1,1001 @@
+"Genero","Idade","Escolaridade","Profissao","Target"
+"F","a - Ate 25 anos ","Fundamental","b",0
+"M","a - Ate 25 anos ","Medio","d",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Fundamental","a",0
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Fundamental","b",0
+"F","a - Ate 25 anos ","Fundamental","b",0
+"F","e - Mais 56 anos","Superior","b",1
+"F","a - Ate 25 anos ","Superior","b",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Superior","b",1
+"F","b - 26 a 35 anos","Superior","b",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Superior","a",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","a",1
+"M","b - 26 a 35 anos","Medio","b",1
+"M","a - Ate 25 anos ","Medio","b",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Fundamental","b",1
+"F","c - 36 a 45 anos","Medio","b",1
+"F","b - 26 a 35 anos","Medio","b",1
+"M","e - Mais 56 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Fundamental","b",0
+"F","b - 26 a 35 anos","Medio","b",1
+"M","a - Ate 25 anos ","Fundamental","c",0
+"M","c - 36 a 45 anos","Medio","b",1
+"M","c - 36 a 45 anos","Medio","a",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"F","e - Mais 56 anos","Fundamental","a",1
+"M","a - Ate 25 anos ","Superior","b",1
+"F","c - 36 a 45 anos","Fundamental","a",0
+"F","d - 46 a 55 anos","Superior","a",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Superior","b",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"F","e - Mais 56 anos","Medio","b",1
+"F","b - 26 a 35 anos","Fundamental","b",0
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Fundamental","c",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","d - 46 a 55 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Medio","e",1
+"F","b - 26 a 35 anos","Pos-graduacao","b",0
+"M","e - Mais 56 anos","Fundamental","a",1
+"M","a - Ate 25 anos ","Fundamental","b",1
+"M","b - 26 a 35 anos","Pos-graduacao","b",1
+"F","b - 26 a 35 anos","Fundamental","c",1
+"M","c - 36 a 45 anos","Fundamental","a",0
+"F","a - Ate 25 anos ","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","d",1
+"M","c - 36 a 45 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Medio","b",1
+"F","c - 36 a 45 anos","Fundamental","c",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Superior","a",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Medio","b",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Medio","b",0
+"F","a - Ate 25 anos ","Medio","c",0
+"F","c - 36 a 45 anos","Medio","b",1
+"M","d - 46 a 55 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Medio","b",1
+"M","e - Mais 56 anos","Pos-graduacao","a",1
+"M","c - 36 a 45 anos","Medio","b",1
+"M","b - 26 a 35 anos","Medio","a",0
+"M","a - Ate 25 anos ","Fundamental","a",1
+"F","c - 36 a 45 anos","Medio","c",0
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","a",1
+"M","b - 26 a 35 anos","Fundamental","b",0
+"F","c - 36 a 45 anos","Medio","d",1
+"M","a - Ate 25 anos ","Medio","a",0
+"F","c - 36 a 45 anos","Medio","d",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","b",1
+"F","e - Mais 56 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","d",1
+"F","c - 36 a 45 anos","Medio","b",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Medio","b",1
+"F","b - 26 a 35 anos","Superior","a",0
+"F","b - 26 a 35 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"M","c - 36 a 45 anos","Medio","b",1
+"F","b - 26 a 35 anos","Pos-graduacao","a",1
+"F","e - Mais 56 anos","Superior","a",1
+"M","e - Mais 56 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Medio","e",1
+"M","b - 26 a 35 anos","Medio","c",1
+"M","a - Ate 25 anos ","Fundamental","a",1
+"F","b - 26 a 35 anos","Fundamental","c",1
+"F","a - Ate 25 anos ","Superior","b",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","a",0
+"F","b - 26 a 35 anos","Medio","a",0
+"F","c - 36 a 45 anos","Superior","a",1
+"M","b - 26 a 35 anos","Fundamental","b",0
+"M","e - Mais 56 anos","Pos-graduacao","a",1
+"F","c - 36 a 45 anos","Fundamental","a",0
+"F","c - 36 a 45 anos","Fundamental","a",1
+"F","e - Mais 56 anos","Medio","b",1
+"M","e - Mais 56 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","e",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Superior","d",1
+"F","d - 46 a 55 anos","Medio","a",1
+"F","c - 36 a 45 anos","Medio","d",1
+"M","a - Ate 25 anos ","Medio","b",1
+"M","a - Ate 25 anos ","Medio","a",0
+"M","a - Ate 25 anos ","Fundamental","a",1
+"M","b - 26 a 35 anos","Fundamental","b",0
+"M","b - 26 a 35 anos","Medio","e",1
+"M","a - Ate 25 anos ","Fundamental","a",1
+"F","c - 36 a 45 anos","Pos-graduacao","e",1
+"F","d - 46 a 55 anos","Superior","b",1
+"F","a - Ate 25 anos ","Fundamental","c",1
+"F","e - Mais 56 anos","Medio","a",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Pos-graduacao","b",1
+"F","b - 26 a 35 anos","Medio","b",1
+"M","b - 26 a 35 anos","Medio","a",0
+"F","c - 36 a 45 anos","Medio","a",1
+"F","a - Ate 25 anos ","Pos-graduacao","a",0
+"F","b - 26 a 35 anos","Medio","a",1
+"F","d - 46 a 55 anos","Medio","b",1
+"F","c - 36 a 45 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","b",0
+"F","a - Ate 25 anos ","Fundamental","e",1
+"M","c - 36 a 45 anos","Superior","b",1
+"F","d - 46 a 55 anos","Medio","b",1
+"F","d - 46 a 55 anos","Superior","b",1
+"M","d - 46 a 55 anos","Fundamental","d",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Superior","b",1
+"M","d - 46 a 55 anos","Medio","a",1
+"M","a - Ate 25 anos ","Medio","a",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","b",0
+"M","c - 36 a 45 anos","Fundamental","a",1
+"M","c - 36 a 45 anos","Superior","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Medio","c",1
+"M","e - Mais 56 anos","Superior","d",1
+"M","e - Mais 56 anos","Medio","a",1
+"F","e - Mais 56 anos","Superior","b",1
+"F","b - 26 a 35 anos","Medio","b",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Medio","b",1
+"M","d - 46 a 55 anos","Medio","a",1
+"F","e - Mais 56 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","d",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Fundamental","b",0
+"F","c - 36 a 45 anos","Medio","a",1
+"M","e - Mais 56 anos","Fundamental","d",1
+"F","c - 36 a 45 anos","Superior","b",0
+"M","c - 36 a 45 anos","Medio","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Superior","c",1
+"F","c - 36 a 45 anos","Fundamental","c",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","c - 36 a 45 anos","Fundamental","b",0
+"M","c - 36 a 45 anos","Fundamental","c",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","d - 46 a 55 anos","Medio","b",1
+"M","c - 36 a 45 anos","Medio","a",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Medio","d",1
+"M","b - 26 a 35 anos","Medio","a",1
+"F","e - Mais 56 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Medio","b",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Fundamental","b",0
+"F","a - Ate 25 anos ","Medio","b",0
+"M","c - 36 a 45 anos","Superior","a",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"F","b - 26 a 35 anos","Superior","a",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"F","c - 36 a 45 anos","Superior","d",1
+"F","c - 36 a 45 anos","Superior","b",1
+"F","b - 26 a 35 anos","Medio","b",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","b - 26 a 35 anos","Pos-graduacao","e",1
+"F","d - 46 a 55 anos","Superior","a",1
+"F","e - Mais 56 anos","Medio","b",1
+"F","a - Ate 25 anos ","Superior","a",1
+"M","b - 26 a 35 anos","Medio","e",1
+"F","a - Ate 25 anos ","Superior","b",0
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Fundamental","d",1
+"M","d - 46 a 55 anos","Fundamental","c",1
+"F","a - Ate 25 anos ","Medio","e",1
+"M","c - 36 a 45 anos","Medio","a",0
+"M","a - Ate 25 anos ","Medio","d",0
+"F","c - 36 a 45 anos","Medio","a",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Superior","a",1
+"F","c - 36 a 45 anos","Medio","a",0
+"F","b - 26 a 35 anos","Medio","a",0
+"M","c - 36 a 45 anos","Medio","d",1
+"F","e - Mais 56 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","c",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","b",0
+"M","b - 26 a 35 anos","Superior","b",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","a",1
+"F","c - 36 a 45 anos","Medio","c",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Fundamental","e",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Medio","b",1
+"F","c - 36 a 45 anos","Medio","b",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Medio","b",1
+"F","a - Ate 25 anos ","Medio","d",1
+"F","a - Ate 25 anos ","Superior","b",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Pos-graduacao","a",1
+"F","e - Mais 56 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","d",1
+"M","b - 26 a 35 anos","Fundamental","a",0
+"F","a - Ate 25 anos ","Medio","b",0
+"M","c - 36 a 45 anos","Medio","b",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Superior","a",1
+"M","c - 36 a 45 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"F","b - 26 a 35 anos","Medio","a",0
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Pos-graduacao","e",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"F","d - 46 a 55 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","e - Mais 56 anos","Fundamental","d",0
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","a",0
+"F","b - 26 a 35 anos","Fundamental","a",0
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Medio","b",0
+"M","b - 26 a 35 anos","Superior","a",0
+"F","b - 26 a 35 anos","Fundamental","c",0
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","e - Mais 56 anos","Superior","b",1
+"F","a - Ate 25 anos ","Superior","a",1
+"M","b - 26 a 35 anos","Medio","a",0
+"M","e - Mais 56 anos","Medio","b",1
+"F","c - 36 a 45 anos","Medio","b",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Medio","c",1
+"F","c - 36 a 45 anos","Superior","a",1
+"M","c - 36 a 45 anos","Medio","c",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"F","c - 36 a 45 anos","Medio","a",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Medio","b",1
+"F","b - 26 a 35 anos","Medio","b",0
+"F","c - 36 a 45 anos","Fundamental","a",0
+"M","e - Mais 56 anos","Medio","e",1
+"F","e - Mais 56 anos","Medio","b",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"M","e - Mais 56 anos","Superior","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Medio","a",1
+"M","a - Ate 25 anos ","Medio","a",0
+"F","a - Ate 25 anos ","Medio","b",1
+"M","b - 26 a 35 anos","Superior","a",0
+"F","e - Mais 56 anos","Fundamental","d",1
+"M","d - 46 a 55 anos","Fundamental","a",1
+"M","a - Ate 25 anos ","Superior","b",1
+"M","c - 36 a 45 anos","Superior","a",1
+"F","b - 26 a 35 anos","Fundamental","a",0
+"F","d - 46 a 55 anos","Fundamental","c",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Pos-graduacao","b",1
+"F","b - 26 a 35 anos","Superior","b",1
+"M","b - 26 a 35 anos","Medio","a",0
+"M","a - Ate 25 anos ","Fundamental","b",0
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Superior","b",0
+"M","e - Mais 56 anos","Fundamental","c",1
+"M","c - 36 a 45 anos","Pos-graduacao","a",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","a",0
+"F","c - 36 a 45 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Medio","a",1
+"M","b - 26 a 35 anos","Superior","b",1
+"F","a - Ate 25 anos ","Superior","a",0
+"M","e - Mais 56 anos","Medio","b",1
+"M","e - Mais 56 anos","Medio","b",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"F","c - 36 a 45 anos","Medio","a",1
+"F","b - 26 a 35 anos","Medio","c",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Pos-graduacao","a",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"F","a - Ate 25 anos ","Superior","b",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","b",0
+"F","a - Ate 25 anos ","Fundamental","a",0
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Medio","a",0
+"M","a - Ate 25 anos ","Superior","b",0
+"F","c - 36 a 45 anos","Superior","a",1
+"M","c - 36 a 45 anos","Fundamental","b",0
+"F","b - 26 a 35 anos","Pos-graduacao","b",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Fundamental","a",0
+"M","d - 46 a 55 anos","Superior","a",1
+"M","b - 26 a 35 anos","Pos-graduacao","b",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Medio","a",0
+"F","d - 46 a 55 anos","Medio","c",1
+"F","b - 26 a 35 anos","Fundamental","a",0
+"F","a - Ate 25 anos ","Fundamental","a",0
+"F","d - 46 a 55 anos","Superior","a",1
+"M","d - 46 a 55 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Superior","e",1
+"F","b - 26 a 35 anos","Medio","b",1
+"M","a - Ate 25 anos ","Fundamental","b",0
+"M","d - 46 a 55 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","e - Mais 56 anos","Medio","d",1
+"F","a - Ate 25 anos ","Medio","b",0
+"F","c - 36 a 45 anos","Medio","c",1
+"F","b - 26 a 35 anos","Fundamental","b",0
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"M","d - 46 a 55 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Superior","a",1
+"M","b - 26 a 35 anos","Superior","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Superior","a",1
+"F","b - 26 a 35 anos","Fundamental","e",0
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"F","c - 36 a 45 anos","Superior","b",1
+"F","e - Mais 56 anos","Medio","b",1
+"M","b - 26 a 35 anos","Fundamental","b",0
+"M","a - Ate 25 anos ","Fundamental","b",0
+"F","a - Ate 25 anos ","Fundamental","e",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","b",0
+"F","d - 46 a 55 anos","Fundamental","e",1
+"M","d - 46 a 55 anos","Medio","b",1
+"M","d - 46 a 55 anos","Medio","b",1
+"M","e - Mais 56 anos","Medio","b",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"F","c - 36 a 45 anos","Fundamental","b",0
+"F","b - 26 a 35 anos","Medio","b",1
+"F","e - Mais 56 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","d",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Pos-graduacao","a",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","a - Ate 25 anos ","Medio","e",1
+"F","b - 26 a 35 anos","Superior","b",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"F","e - Mais 56 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Fundamental","d",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","c",1
+"M","d - 46 a 55 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Superior","b",1
+"F","c - 36 a 45 anos","Medio","a",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Medio","a",0
+"F","c - 36 a 45 anos","Superior","b",1
+"F","e - Mais 56 anos","Medio","b",1
+"M","b - 26 a 35 anos","Pos-graduacao","a",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Fundamental","b",0
+"F","a - Ate 25 anos ","Medio","a",0
+"F","c - 36 a 45 anos","Fundamental","b",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"M","e - Mais 56 anos","Fundamental","a",1
+"M","a - Ate 25 anos ","Pos-graduacao","d",1
+"F","a - Ate 25 anos ","Superior","a",0
+"M","a - Ate 25 anos ","Medio","b",0
+"F","c - 36 a 45 anos","Fundamental","a",0
+"F","b - 26 a 35 anos","Pos-graduacao","b",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Fundamental","b",1
+"F","b - 26 a 35 anos","Superior","a",1
+"M","d - 46 a 55 anos","Medio","d",1
+"F","b - 26 a 35 anos","Superior","e",1
+"F","c - 36 a 45 anos","Fundamental","b",0
+"M","a - Ate 25 anos ","Medio","a",1
+"F","d - 46 a 55 anos","Medio","b",1
+"M","c - 36 a 45 anos","Pos-graduacao","b",1
+"F","a - Ate 25 anos ","Superior","a",1
+"F","c - 36 a 45 anos","Superior","e",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Superior","b",1
+"M","c - 36 a 45 anos","Fundamental","a",0
+"M","c - 36 a 45 anos","Superior","b",0
+"M","d - 46 a 55 anos","Fundamental","a",0
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Fundamental","a",0
+"F","b - 26 a 35 anos","Medio","a",1
+"F","b - 26 a 35 anos","Superior","b",0
+"M","e - Mais 56 anos","Superior","a",1
+"F","c - 36 a 45 anos","Fundamental","d",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"M","d - 46 a 55 anos","Fundamental","a",1
+"M","c - 36 a 45 anos","Superior","e",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"M","c - 36 a 45 anos","Medio","d",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","a",0
+"M","b - 26 a 35 anos","Fundamental","b",0
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Superior","c",1
+"M","b - 26 a 35 anos","Fundamental","d",1
+"M","c - 36 a 45 anos","Medio","d",0
+"M","c - 36 a 45 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Superior","d",1
+"F","e - Mais 56 anos","Fundamental","e",1
+"F","c - 36 a 45 anos","Medio","b",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"F","a - Ate 25 anos ","Fundamental","b",0
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Fundamental","b",0
+"M","c - 36 a 45 anos","Medio","a",1
+"M","c - 36 a 45 anos","Medio","a",0
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","e",1
+"F","b - 26 a 35 anos","Superior","b",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"F","c - 36 a 45 anos","Medio","b",1
+"M","b - 26 a 35 anos","Medio","a",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"F","e - Mais 56 anos","Medio","a",1
+"F","c - 36 a 45 anos","Fundamental","c",1
+"M","c - 36 a 45 anos","Medio","c",1
+"M","c - 36 a 45 anos","Superior","a",0
+"M","c - 36 a 45 anos","Medio","a",1
+"M","c - 36 a 45 anos","Fundamental","e",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Medio","b",1
+"M","a - Ate 25 anos ","Fundamental","a",1
+"F","e - Mais 56 anos","Medio","a",1
+"M","c - 36 a 45 anos","Fundamental","c",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"F","e - Mais 56 anos","Medio","b",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Medio","c",1
+"M","b - 26 a 35 anos","Medio","a",1
+"F","a - Ate 25 anos ","Medio","b",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"M","b - 26 a 35 anos","Fundamental","a",0
+"M","c - 36 a 45 anos","Medio","b",1
+"F","d - 46 a 55 anos","Medio","b",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Superior","a",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","a",0
+"M","e - Mais 56 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Fundamental","e",1
+"F","c - 36 a 45 anos","Fundamental","d",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"M","d - 46 a 55 anos","Superior","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Superior","b",1
+"F","e - Mais 56 anos","Fundamental","d",1
+"F","a - Ate 25 anos ","Fundamental","c",1
+"M","b - 26 a 35 anos","Pos-graduacao","c",1
+"M","b - 26 a 35 anos","Superior","a",0
+"F","c - 36 a 45 anos","Medio","b",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"M","e - Mais 56 anos","Medio","b",1
+"M","d - 46 a 55 anos","Fundamental","b",0
+"M","a - Ate 25 anos ","Medio","b",1
+"F","c - 36 a 45 anos","Medio","d",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Medio","b",1
+"M","b - 26 a 35 anos","Pos-graduacao","b",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","c",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"F","e - Mais 56 anos","Medio","b",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Fundamental","a",0
+"F","c - 36 a 45 anos","Superior","d",1
+"M","b - 26 a 35 anos","Superior","b",1
+"M","c - 36 a 45 anos","Medio","a",0
+"F","b - 26 a 35 anos","Superior","b",1
+"F","a - Ate 25 anos ","Superior","a",1
+"F","b - 26 a 35 anos","Fundamental","a",0
+"M","b - 26 a 35 anos","Medio","a",1
+"F","b - 26 a 35 anos","Superior","b",1
+"M","a - Ate 25 anos ","Fundamental","b",0
+"M","c - 36 a 45 anos","Superior","b",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"M","e - Mais 56 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Medio","b",1
+"F","b - 26 a 35 anos","Medio","e",1
+"F","b - 26 a 35 anos","Fundamental","c",1
+"F","e - Mais 56 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Medio","a",0
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","b",0
+"M","d - 46 a 55 anos","Superior","a",1
+"F","e - Mais 56 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Superior","b",1
+"M","a - Ate 25 anos ","Superior","b",1
+"M","c - 36 a 45 anos","Pos-graduacao","a",1
+"M","e - Mais 56 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Medio","b",1
+"M","a - Ate 25 anos ","Fundamental","b",1
+"F","b - 26 a 35 anos","Fundamental","a",0
+"M","a - Ate 25 anos ","Superior","a",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"M","a - Ate 25 anos ","Fundamental","b",0
+"F","c - 36 a 45 anos","Superior","a",1
+"F","a - Ate 25 anos ","Pos-graduacao","e",1
+"M","b - 26 a 35 anos","Medio","e",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Medio","c",1
+"F","b - 26 a 35 anos","Pos-graduacao","b",0
+"F","c - 36 a 45 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Fundamental","b",0
+"F","b - 26 a 35 anos","Fundamental","a",1
+"M","e - Mais 56 anos","Medio","b",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"M","d - 46 a 55 anos","Pos-graduacao","a",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","b - 26 a 35 anos","Medio","a",0
+"M","a - Ate 25 anos ","Fundamental","a",0
+"F","b - 26 a 35 anos","Fundamental","d",1
+"F","e - Mais 56 anos","Medio","b",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","d - 46 a 55 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","a",1
+"F","c - 36 a 45 anos","Superior","b",0
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Medio","c",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","c - 36 a 45 anos","Superior","b",1
+"F","d - 46 a 55 anos","Fundamental","e",1
+"M","b - 26 a 35 anos","Fundamental","b",0
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Pos-graduacao","a",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Superior","b",1
+"M","e - Mais 56 anos","Superior","a",0
+"M","c - 36 a 45 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","b",1
+"M","a - Ate 25 anos ","Fundamental","b",1
+"F","e - Mais 56 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"F","a - Ate 25 anos ","Superior","b",0
+"F","a - Ate 25 anos ","Medio","b",0
+"M","b - 26 a 35 anos","Fundamental","a",0
+"M","c - 36 a 45 anos","Medio","b",0
+"F","a - Ate 25 anos ","Pos-graduacao","b",1
+"F","b - 26 a 35 anos","Fundamental","e",1
+"M","c - 36 a 45 anos","Fundamental","d",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","e - Mais 56 anos","Medio","b",1
+"M","c - 36 a 45 anos","Fundamental","b",0
+"F","e - Mais 56 anos","Superior","b",1
+"M","a - Ate 25 anos ","Superior","b",1
+"F","d - 46 a 55 anos","Superior","a",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Fundamental","b",0
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"M","b - 26 a 35 anos","Medio","c",1
+"M","b - 26 a 35 anos","Fundamental","a",0
+"M","c - 36 a 45 anos","Superior","a",0
+"M","b - 26 a 35 anos","Fundamental","d",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","d",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"F","e - Mais 56 anos","Superior","a",1
+"F","b - 26 a 35 anos","Pos-graduacao","a",1
+"F","c - 36 a 45 anos","Medio","e",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","c - 36 a 45 anos","Superior","a",0
+"F","e - Mais 56 anos","Superior","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"M","a - Ate 25 anos ","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","b",1
+"M","a - Ate 25 anos ","Superior","b",0
+"F","a - Ate 25 anos ","Fundamental","b",0
+"F","b - 26 a 35 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"M","c - 36 a 45 anos","Medio","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Superior","a",1
+"F","c - 36 a 45 anos","Fundamental","e",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","b",0
+"M","d - 46 a 55 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Medio","b",0
+"F","d - 46 a 55 anos","Medio","b",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Pos-graduacao","b",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Medio","a",0
+"M","b - 26 a 35 anos","Medio","e",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","d",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"F","a - Ate 25 anos ","Superior","a",1
+"M","a - Ate 25 anos ","Medio","c",1
+"F","c - 36 a 45 anos","Medio","a",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","b",0
+"M","b - 26 a 35 anos","Pos-graduacao","b",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Medio","b",0
+"F","c - 36 a 45 anos","Pos-graduacao","b",1
+"F","c - 36 a 45 anos","Medio","b",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Superior","a",1
+"F","d - 46 a 55 anos","Medio","a",1
+"M","c - 36 a 45 anos","Fundamental","d",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Superior","b",1
+"F","c - 36 a 45 anos","Medio","a",1
+"M","a - Ate 25 anos ","Fundamental","b",0
+"F","a - Ate 25 anos ","Medio","a",0
+"M","c - 36 a 45 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Superior","d",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","b",0
+"M","c - 36 a 45 anos","Medio","b",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Superior","c",1
+"F","b - 26 a 35 anos","Medio","a",0
+"F","a - Ate 25 anos ","Fundamental","b",1
+"F","e - Mais 56 anos","Medio","a",1
+"M","b - 26 a 35 anos","Medio","a",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Medio","a",1
+"M","e - Mais 56 anos","Medio","a",0
+"F","a - Ate 25 anos ","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Fundamental","e",1
+"F","b - 26 a 35 anos","Fundamental","e",1
+"F","c - 36 a 45 anos","Fundamental","d",1
+"F","c - 36 a 45 anos","Pos-graduacao","a",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"F","e - Mais 56 anos","Medio","b",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"M","b - 26 a 35 anos","Superior","a",1
+"M","d - 46 a 55 anos","Medio","a",1
+"F","c - 36 a 45 anos","Pos-graduacao","d",1
+"F","c - 36 a 45 anos","Fundamental","b",0
+"F","a - Ate 25 anos ","Fundamental","b",1
+"F","b - 26 a 35 anos","Superior","a",1
+"F","a - Ate 25 anos ","Fundamental","b",0
+"M","e - Mais 56 anos","Superior","b",1
+"M","c - 36 a 45 anos","Fundamental","b",0
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Superior","b",1
+"F","a - Ate 25 anos ","Superior","a",0
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Superior","b",1
+"F","e - Mais 56 anos","Medio","a",1
+"M","b - 26 a 35 anos","Medio","a",1
+"M","b - 26 a 35 anos","Medio","c",1
+"F","d - 46 a 55 anos","Fundamental","a",0
+"F","d - 46 a 55 anos","Medio","c",1
+"M","d - 46 a 55 anos","Medio","d",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Superior","a",1
+"F","b - 26 a 35 anos","Pos-graduacao","b",1
+"F","c - 36 a 45 anos","Fundamental","e",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"M","a - Ate 25 anos ","Medio","a",0
+"F","e - Mais 56 anos","Fundamental","b",1
+"F","e - Mais 56 anos","Superior","b",1
+"F","a - Ate 25 anos ","Medio","a",0
+"F","d - 46 a 55 anos","Superior","b",1
+"M","b - 26 a 35 anos","Medio","b",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","a",0
+"F","b - 26 a 35 anos","Pos-graduacao","a",0
+"F","b - 26 a 35 anos","Fundamental","a",0
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","e",0
+"F","d - 46 a 55 anos","Superior","b",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"M","e - Mais 56 anos","Fundamental","c",1
+"F","c - 36 a 45 anos","Medio","a",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Superior","b",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Superior","b",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","e - Mais 56 anos","Superior","d",1
+"M","d - 46 a 55 anos","Medio","a",1
+"F","b - 26 a 35 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"F","c - 36 a 45 anos","Medio","a",0
+"M","c - 36 a 45 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","d",1
+"F","d - 46 a 55 anos","Fundamental","e",1
+"M","b - 26 a 35 anos","Medio","b",1
+"M","e - Mais 56 anos","Fundamental","c",1
+"M","b - 26 a 35 anos","Pos-graduacao","c",0
+"M","e - Mais 56 anos","Superior","b",0
+"M","e - Mais 56 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Pos-graduacao","b",1
+"F","a - Ate 25 anos ","Superior","a",0
+"M","d - 46 a 55 anos","Superior","a",0
+"F","b - 26 a 35 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"M","a - Ate 25 anos ","Fundamental","b",1
+"F","a - Ate 25 anos ","Medio","b",0
+"M","c - 36 a 45 anos","Superior","a",0
+"F","d - 46 a 55 anos","Medio","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","c",0
+"M","a - Ate 25 anos ","Medio","a",1
+"F","b - 26 a 35 anos","Medio","b",1
+"M","e - Mais 56 anos","Medio","b",1
+"F","c - 36 a 45 anos","Medio","a",1
+"F","e - Mais 56 anos","Medio","a",1
+"M","b - 26 a 35 anos","Superior","b",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Superior","a",1
+"M","b - 26 a 35 anos","Medio","b",1
+"F","c - 36 a 45 anos","Fundamental","a",0
+"M","e - Mais 56 anos","Superior","b",1
+"M","c - 36 a 45 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","b",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","a",1
+"F","a - Ate 25 anos ","Fundamental","d",1
+"F","b - 26 a 35 anos","Medio","a",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"F","a - Ate 25 anos ","Medio","a",0
+"M","a - Ate 25 anos ","Medio","a",0
+"F","b - 26 a 35 anos","Superior","a",1
+"M","a - Ate 25 anos ","Fundamental","d",1
+"F","c - 36 a 45 anos","Medio","a",0
+"F","c - 36 a 45 anos","Medio","b",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Medio","b",1
+"F","b - 26 a 35 anos","Medio","d",1
+"M","a - Ate 25 anos ","Fundamental","a",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"M","a - Ate 25 anos ","Medio","a",1
+"F","b - 26 a 35 anos","Superior","d",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"M","e - Mais 56 anos","Medio","b",1
+"M","b - 26 a 35 anos","Fundamental","b",0
+"F","b - 26 a 35 anos","Medio","b",1
+"M","b - 26 a 35 anos","Medio","d",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Fundamental","a",0
+"M","b - 26 a 35 anos","Superior","d",0
+"F","b - 26 a 35 anos","Superior","b",0
+"M","e - Mais 56 anos","Superior","a",0
+"M","b - 26 a 35 anos","Fundamental","b",0
+"M","a - Ate 25 anos ","Medio","b",1
+"M","b - 26 a 35 anos","Medio","a",1
+"F","c - 36 a 45 anos","Superior","d",1
+"F","d - 46 a 55 anos","Superior","b",1
+"F","b - 26 a 35 anos","Superior","b",1
+"M","a - Ate 25 anos ","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Medio","c",1
+"M","c - 36 a 45 anos","Fundamental","b",1
+"M","d - 46 a 55 anos","Fundamental","d",1
+"M","e - Mais 56 anos","Medio","a",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","a - Ate 25 anos ","Pos-graduacao","b",0
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","b",1
+"M","c - 36 a 45 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","a",1
+"F","d - 46 a 55 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","c",1
+"M","b - 26 a 35 anos","Medio","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","a - Ate 25 anos ","Medio","a",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","b - 26 a 35 anos","Fundamental","b",1
+"M","e - Mais 56 anos","Fundamental","b",0
+"M","c - 36 a 45 anos","Superior","a",0
+"M","a - Ate 25 anos ","Medio","a",0
+"M","a - Ate 25 anos ","Medio","d",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Medio","a",1
+"F","c - 36 a 45 anos","Fundamental","a",0
+"M","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","a",1
+"M","c - 36 a 45 anos","Medio","b",1
+"F","d - 46 a 55 anos","Fundamental","a",0
+"F","d - 46 a 55 anos","Fundamental","e",1
+"M","b - 26 a 35 anos","Superior","d",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","a",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","b - 26 a 35 anos","Medio","c",0
+"F","c - 36 a 45 anos","Medio","a",1
+"M","b - 26 a 35 anos","Medio","a",1
+"F","c - 36 a 45 anos","Medio","a",1
+"M","c - 36 a 45 anos","Superior","a",1
+"F","e - Mais 56 anos","Fundamental","b",1
+"M","c - 36 a 45 anos","Medio","a",1
+"M","b - 26 a 35 anos","Fundamental","a",0
+"F","c - 36 a 45 anos","Pos-graduacao","d",1
+"F","b - 26 a 35 anos","Medio","a",0
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Fundamental","d",1
+"M","b - 26 a 35 anos","Superior","b",0
+"F","b - 26 a 35 anos","Fundamental","a",0
+"F","b - 26 a 35 anos","Fundamental","d",1
+"F","b - 26 a 35 anos","Fundamental","b",0
+"M","d - 46 a 55 anos","Fundamental","a",1
+"F","d - 46 a 55 anos","Medio","b",1
+"F","a - Ate 25 anos ","Fundamental","a",1
+"F","c - 36 a 45 anos","Medio","b",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","a",0
+"F","c - 36 a 45 anos","Fundamental","a",1
+"M","c - 36 a 45 anos","Medio","a",1
+"F","b - 26 a 35 anos","Superior","d",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"M","c - 36 a 45 anos","Medio","e",1
+"F","b - 26 a 35 anos","Medio","a",1
+"F","c - 36 a 45 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Medio","e",1
+"M","d - 46 a 55 anos","Medio","e",1
+"F","d - 46 a 55 anos","Medio","b",1
+"M","a - Ate 25 anos ","Medio","a",0
+"M","d - 46 a 55 anos","Fundamental","b",1
+"M","a - Ate 25 anos ","Medio","b",0
+"M","a - Ate 25 anos ","Fundamental","a",0
+"F","b - 26 a 35 anos","Fundamental","e",1
+"M","c - 36 a 45 anos","Fundamental","d",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","c - 36 a 45 anos","Medio","a",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"F","a - Ate 25 anos ","Pos-graduacao","b",1
+"M","b - 26 a 35 anos","Pos-graduacao","d",0
+"F","b - 26 a 35 anos","Fundamental","d",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","c - 36 a 45 anos","Superior","a",0
+"F","c - 36 a 45 anos","Fundamental","a",0
+"F","d - 46 a 55 anos","Fundamental","b",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"F","e - Mais 56 anos","Medio","b",1
+"F","b - 26 a 35 anos","Fundamental","a",0
+"F","c - 36 a 45 anos","Medio","a",0
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","e - Mais 56 anos","Superior","a",1
+"M","a - Ate 25 anos ","Medio","b",0
+"M","e - Mais 56 anos","Medio","b",1
+"M","e - Mais 56 anos","Medio","d",1
+"M","c - 36 a 45 anos","Pos-graduacao","b",1
+"F","b - 26 a 35 anos","Superior","b",0
+"M","a - Ate 25 anos ","Pos-graduacao","a",0
+"F","b - 26 a 35 anos","Medio","b",1
+"F","c - 36 a 45 anos","Superior","b",1
+"F","d - 46 a 55 anos","Fundamental","d",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"M","c - 36 a 45 anos","Fundamental","c",1
+"F","b - 26 a 35 anos","Superior","b",1
+"M","a - Ate 25 anos ","Fundamental","b",1
+"M","c - 36 a 45 anos","Medio","a",0
+"M","a - Ate 25 anos ","Medio","b",1
+"F","c - 36 a 45 anos","Medio","c",1
+"M","e - Mais 56 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Fundamental","b",0
+"M","a - Ate 25 anos ","Medio","b",1
+"F","c - 36 a 45 anos","Medio","b",1
+"F","b - 26 a 35 anos","Pos-graduacao","a",0
+"F","b - 26 a 35 anos","Superior","a",0
+"M","c - 36 a 45 anos","Medio","a",0
+"F","c - 36 a 45 anos","Medio","a",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Pos-graduacao","b",1
+"F","c - 36 a 45 anos","Medio","a",0
+"M","d - 46 a 55 anos","Fundamental","c",1
+"M","a - Ate 25 anos ","Medio","b",0
+"F","a - Ate 25 anos ","Medio","a",1
+"F","e - Mais 56 anos","Fundamental","d",1
+"F","b - 26 a 35 anos","Fundamental","a",1
+"M","a - Ate 25 anos ","Fundamental","a",0
+"M","a - Ate 25 anos ","Fundamental","b",1
+"M","a - Ate 25 anos ","Medio","b",1
+"M","b - 26 a 35 anos","Fundamental","b",1
+"F","b - 26 a 35 anos","Medio","e",1
+"F","c - 36 a 45 anos","Medio","a",1
+"F","a - Ate 25 anos ","Medio","b",1
+"M","b - 26 a 35 anos","Superior","a",1
+"M","d - 46 a 55 anos","Medio","d",1
+"M","e - Mais 56 anos","Medio","a",1
+"F","a - Ate 25 anos ","Medio","a",1
+"F","c - 36 a 45 anos","Medio","b",1
+"F","c - 36 a 45 anos","Medio","d",1
+"M","e - Mais 56 anos","Fundamental","c",1
+"M","b - 26 a 35 anos","Medio","a",1
+"M","b - 26 a 35 anos","Fundamental","b",0
+"M","c - 36 a 45 anos","Medio","a",1
+"F","b - 26 a 35 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Fundamental","a",1
+"M","d - 46 a 55 anos","Medio","e",1
+"M","a - Ate 25 anos ","Superior","c",1
+"F","b - 26 a 35 anos","Medio","a",0
+"F","e - Mais 56 anos","Fundamental","a",1
+"M","e - Mais 56 anos","Fundamental","b",1
+"F","d - 46 a 55 anos","Superior","a",1
+"F","b - 26 a 35 anos","Medio","a",0
+"F","c - 36 a 45 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","a",1
+"F","b - 26 a 35 anos","Pos-graduacao","b",1
+"F","c - 36 a 45 anos","Fundamental","b",1
+"F","a - Ate 25 anos ","Medio","b",1
+"M","c - 36 a 45 anos","Medio","a",0
+"F","a - Ate 25 anos ","Superior","a",0
+"F","c - 36 a 45 anos","Fundamental","d",1
+"M","b - 26 a 35 anos","Medio","b",1
+"M","b - 26 a 35 anos","Fundamental","a",1
+"F","b - 26 a 35 anos","Medio","c",1
