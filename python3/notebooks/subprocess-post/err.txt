@@ -1,0 +1,1 @@
+./bash-script-with-bad-syntax: line 4: foo: command not found

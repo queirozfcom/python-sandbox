@@ -1,0 +1,10 @@
+total 48K
+drwxrwxr-x  3 felipe felipe 4,0K Mar 28 23:28 .
+drwxrwxr-x 48 felipe felipe 4,0K Mar 25 23:29 ..
+-rwxrwxr-x  1 felipe felipe   41 Mar 28 21:20 bash-script-with-bad-syntax
+-rw-rw-r--  1 felipe felipe  337 Mar 28 23:22 cmd.py
+-rw-r--r--  1 felipe felipe  12K Mar 28 23:26 .cmd.py.swp
+-rw-rw-r--  1 felipe felipe    0 Mar 28 23:28 err.txt
+drwxrwxr-x  2 felipe felipe 4,0K Nov  3 19:32 .ipynb_checkpoints
+-rw-rw-r--  1 felipe felipe  14K Mar 28 23:28 main.ipynb
+-rw-rw-r--  1 felipe felipe    0 Mar 28 23:28 out.txt
