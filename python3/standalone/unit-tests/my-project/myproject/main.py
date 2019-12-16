@@ -19,7 +19,13 @@ def function_b():
     return param1.sayhi()
 
 
-if __name__ == '__main__':
-    obj = MyClass("foo")
+def function_c(param):
+    output = param.sayhi()
 
-    function_b(obj)
+    return output.upper()
+
+
+def function_d(param):
+    name = param.name
+
+    return name.upper()
