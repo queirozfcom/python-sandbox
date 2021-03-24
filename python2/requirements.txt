@@ -85,7 +85,7 @@ pyzmq==15.2.0
 qtconsole==4.3.0
 reportlab==3.0
 requests==2.2.1
-rsa==3.3
+rsa==4.1
 s3transfer==0.0.1
 scipy==0.15.1
 sessioninstaller==0.0.0
