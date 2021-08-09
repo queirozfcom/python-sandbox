@@ -1,9 +1,9 @@
-total 40K
-drwxr-xr-x  3 felipe felipe 4,0K jun 20  2020 .
+total 44K
+drwxr-xr-x  3 felipe felipe 4,0K ago  9 01:02 .
 drwxr-xr-x 73 felipe felipe 4,0K ago  8 20:00 ..
 -rwxr-xr-x  1 felipe felipe   41 jun 20  2020 bash-script-with-bad-syntax
 -rw-r--r--  1 felipe felipe  337 jun 20  2020 cmd.py
--rw-r--r--  1 felipe felipe    0 ago  9 00:58 err.txt
+-rw-r--r--  1 felipe felipe    0 ago  9 01:02 err.txt
 drwxr-xr-x  2 felipe felipe 4,0K jun 20  2020 .ipynb_checkpoints
--rw-r--r--  1 felipe felipe  20K jun 20  2020 main.ipynb
--rw-r--r--  1 felipe felipe    0 ago  9 00:58 out.txt
+-rw-r--r--  1 felipe felipe  22K ago  9 01:02 main.ipynb
+-rw-r--r--  1 felipe felipe    0 ago  9 01:02 out.txt
