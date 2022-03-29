@@ -57,7 +57,7 @@ oauthlib==0.6.1
 oneconf==0.3.7.14.4.1
 packaging==16.8
 PAM==0.4.2
-paramiko==1.10.1
+paramiko==2.10.1
 pathlib2==2.1.0
 pexpect==3.1
 pickleshare==0.7.2
