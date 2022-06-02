@@ -25,7 +25,7 @@ functools32==3.2.3.post2
 futures==3.0.5
 gensim==0.11.1.post1
 gyp==0.1
-html5lib==0.999
+html5lib==0.99999999
 httplib2==0.8
 ipykernel==4.6.1
 ipython==5.3.0
