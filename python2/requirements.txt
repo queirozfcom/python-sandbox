@@ -84,7 +84,7 @@ pyxdg==0.25
 pyzmq==15.2.0
 qtconsole==4.3.0
 reportlab==3.0
-requests==2.2.1
+requests==2.20.0
 rsa==3.3
 s3transfer==0.0.1
 scipy==0.15.1
