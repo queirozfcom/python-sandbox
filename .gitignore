@@ -67,3 +67,5 @@ itau-ds.ipynb
 crimes.csv
 python3/notebooks/python-twitter
 python3/notebooks/interview-work/
+python3/notebooks/pytorch/data/
+*.pth
