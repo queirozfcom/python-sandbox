@@ -8,7 +8,7 @@ backports.ssl-match-hostname==3.5.0.1
 boto==2.38.0
 botocore==1.4.14
 bz2file==0.98
-certifi==2016.2.28
+certifi==2022.12.7
 chardet==2.0.1
 colorama==0.3.3
 command-not-found==0.3
