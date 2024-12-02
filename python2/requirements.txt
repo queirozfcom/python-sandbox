@@ -28,7 +28,7 @@ gyp==0.1
 html5lib==0.999
 httplib2==0.8
 ipykernel==4.6.1
-ipython==5.3.0
+ipython==8.10.0
 ipython-genutils==0.1.0
 ipywidgets==6.0.0
 JCC==2.20
