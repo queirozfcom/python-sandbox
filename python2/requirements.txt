@@ -44,7 +44,7 @@ lucene==4.9.0
 lxml==3.3.3
 MarkupSafe==0.23
 matplotlib==1.4.3
-mistune==0.7.2
+mistune==0.8.1
 mock==1.0.1
 MySQL-python==1.2.5
 nbconvert==4.2.0
